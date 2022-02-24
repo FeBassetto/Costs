@@ -1,13 +1,17 @@
 import React from "react";
 
-
+import Message from "../../layout/Message/message";
 
 const Projects = () => {
 
 
 
     return(
-        <h1>Projects</h1>
+        <div>
+            <h1>Meus Projetos</h1>
+            <Message msg="Mensagem"/>
+        </div>
+
     )
 }
 
