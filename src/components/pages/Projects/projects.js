@@ -13,6 +13,7 @@ const Projects = () => {
 
     const [projects,setProjects] = useState([])
     const [removeLoading, setRemoveLoading] = useState(false)
+    const [projectMessage,setProjectMessage] = useState('')
 
     const location = useLocation()
     let message;
@@ -49,8 +50,9 @@ const Projects = () => {
                 'Content-Type' : 'application/json'
             },
         }).then(resp => resp.json())
-        .then(data => {
-            setProjects(projects.filter((project) => project.id !== id))
+        .then(() => {
+            setProjects(projects.filter((project) => project.id !== id))   
+            setProjectMessage('Projeto removido com sucesso!')   
         })
         .catch(err => console.log(err))
     }
@@ -62,6 +64,7 @@ const Projects = () => {
                 <LinkButton to="/newproject" text="Criar projeto" />
             </div>
             {message && <Message type="success" msg={message} /> }
+            {projectMessage && <Message type="success" msg={projectMessage} /> }
             <Container customClass="start">
                 {projects.length > 0 && 
                     projects.map((project) => project.name && <ProjectCard 
@@ -70,6 +73,7 @@ const Projects = () => {
                     budget={project.budget} 
                     category={project.category.name} 
                     key={project.id} 
+                    handleRemove={removeProject}
                     />)
                 }
                 {!removeLoading && <Loader/>}
