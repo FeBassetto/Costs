@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "Design do site",
-      "budget": "5000",
+      "name": "projetin felas",
+      "budget": "10000",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
