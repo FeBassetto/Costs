@@ -7,7 +7,8 @@ const ServiceCard = ({id, name, cost, description, key, handleRemove}) => {
 
 
     const remove = (e) => {
-
+        e.preventDefault()
+        handleRemove(id, cost)
     }
 
 
