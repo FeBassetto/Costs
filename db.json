@@ -1,15 +1,22 @@
 {
   "projects": [
     {
-      "name": "qualuqer",
-      "budget": "1321321312",
+      "name": "Front-end",
+      "budget": "20000",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "3",
+        "name": "Design"
       },
-      "cost": 0,
-      "services": [],
-      "id": 2
+      "cost": 10000,
+      "services": [
+        {
+          "name": "React",
+          "cost": "10000",
+          "description": "Plataforma",
+          "id": "de45949f-490e-4bed-88d3-7ac11b6268b0"
+        }
+      ],
+      "id": 1
     }
   ],
   "categories": [
