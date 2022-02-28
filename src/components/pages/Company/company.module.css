@@ -10,6 +10,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-top: .1em;
 }
 
 .company_first_child_container div{
@@ -33,7 +34,7 @@
 }
 
 .company_history{
-    background-color: rgb(17, 17, 17);
+    background-color: #222;
     color: #ffbb22;
 }
 
@@ -48,9 +49,27 @@
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
+    margin-top: 2em;
 }
 
 .company_second_child_container div{
     width: calc(100%/3);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em 0em;
+}
+
+.company_second_child_container div svg{
+    font-size: 4em;    
+}
+
+.company_second_child_container div .company_icons_title{
+    font-size: 1.8em;
+}
+
+.company_binoculars{
+    background-color: #222;
+    color: #ffbb22;
 }

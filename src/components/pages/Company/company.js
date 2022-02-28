@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './company.module.css'
-
+import {FiTarget, FiAnchor} from 'react-icons/fi'
+import {FaBinoculars} from 'react-icons/fa'
 
 
 const Company = () => {
@@ -36,13 +37,28 @@ const Company = () => {
          </div>
          <div className={styles.company_second_child_container}>
             <div>
-               <h1>Bloco1</h1>
+               <div className={styles.company_target}>
+                  <FiTarget/>
+                  <div className={styles.company_icons_title}>
+                     Missão
+                  </div>
+               </div>
             </div>
-            <div>
-               <h1>Bloco2</h1>  
+            <div className={styles.company_binoculars}>
+               <div>
+                  <FaBinoculars/>
+                  <div className={styles.company_icons_title}>
+                     Visão
+                  </div>
+               </div>  
             </div>
-            <div>
-               <h1>Bloco3</h1>
+            <div className={styles.company_anchor}>
+               <div>
+                  <FiAnchor/>
+                  <div className={styles.company_icons_title}>
+                     Valores
+                  </div>
+               </div>
             </div>
          </div>
       </section>
