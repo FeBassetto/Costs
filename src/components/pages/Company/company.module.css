@@ -49,16 +49,31 @@
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
-    margin-top: 2em;
+    margin-top: .1em;
+    margin-bottom: .1em;
 }
 
-.company_second_child_container div{
+.company_second_child_container > div{
     width: calc(100%/3);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1em 0em;
+    padding: 2em 0em;
+}
+
+.company_second_child_container div div{
+    text-align: justify;
+    padding: 0em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.company_second_child_container div > div{
+    margin-bottom: .5em;
 }
 
 .company_second_child_container div svg{
@@ -73,3 +88,8 @@
     background-color: #222;
     color: #ffbb22;
 }
+
+.company_anchor div div{
+    text-align: center;
+}
+

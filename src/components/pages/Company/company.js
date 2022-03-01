@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './company.module.css'
-import {FiTarget, FiAnchor} from 'react-icons/fi'
-import {FaBinoculars} from 'react-icons/fa'
+import { FiTarget, FiAnchor } from 'react-icons/fi'
+import { FaBinoculars } from 'react-icons/fa'
 
 
 const Company = () => {
@@ -29,34 +29,53 @@ const Company = () => {
                <p>
                   Fundada em 2010 pelo programador Felipe
                   Silveira Bassetto, o Costs se tornou referencia
-                  em todo Brasil. Foi o <span>primeiro gerenciador de 
-                  projetos no Brasil</span>, onde desde o começo teve um
+                  em todo Brasil. Foi o <span>primeiro gerenciador de
+                     projetos no Brasil</span>, onde desde o começo teve um
                   grande sucesso devido a excelência do seu serviço.
                </p>
-            </div> 
+            </div>
          </div>
+         
          <div className={styles.company_second_child_container}>
             <div>
                <div className={styles.company_target}>
-                  <FiTarget/>
+                  <FiTarget />
                   <div className={styles.company_icons_title}>
                      Missão
                   </div>
                </div>
+               <div>
+                  Proporcionar aos usuários uma melhor organização
+                  em seus projetos, conseguindo organizar os serviços
+                  com orçamento e despesas
+               </div>
             </div>
             <div className={styles.company_binoculars}>
                <div>
-                  <FaBinoculars/>
+                  <FaBinoculars />
                   <div className={styles.company_icons_title}>
                      Visão
                   </div>
-               </div>  
+               </div>
+               <div>
+                  Mostrar o quão importante é administrar seu
+                  projeto de maneira adequada, para assim conseguir
+                  resultados incríveis
+               </div>
             </div>
             <div className={styles.company_anchor}>
                <div>
-                  <FiAnchor/>
+                  <FiAnchor />
                   <div className={styles.company_icons_title}>
                      Valores
+                  </div>
+               </div>
+               <div>
+                  <div>
+                     Profissionalismo <br/>
+                     Segurança <br/>
+                     Organização <br/>
+                     Dedicação
                   </div>
                </div>
             </div>
