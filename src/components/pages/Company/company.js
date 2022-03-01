@@ -28,7 +28,7 @@ const Company = () => {
                <h2>História</h2>
                <p>
                   Fundada em 2010 pelo programador Felipe
-                  Silveira Bassetto, o Costs se tornou referencia
+                  Silveira Bassetto, a Costs se tornou referencia
                   em todo Brasil. Foi o <span>primeiro gerenciador de
                      projetos no Brasil</span>, onde desde o começo teve um
                   grande sucesso devido a excelência do seu serviço.

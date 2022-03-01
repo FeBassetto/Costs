@@ -1,0 +1,38 @@
+.contact_container{
+    display: flex;
+    width: 100%;
+    padding-top: .1em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact_container_title{
+    color: #ffbb22;
+    background-color: #222;
+    width: 100%;
+    text-align: center;
+    padding: 1.3em;
+}
+
+.contact_container_info{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 6em;
+    padding-bottom: 15em;
+    background-color: #ffbb22;
+}
+
+.contact_container_info > div{
+    width: calc(100%/3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact_container_info > div svg{
+    font-size: 5em;
+}
+
